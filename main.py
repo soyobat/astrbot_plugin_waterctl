@@ -140,7 +140,6 @@ class WaterCtlPlugin(Star):
         elif subcommand == "status":
             result = await self._api_request("GET", "/status")
             if "error" in result:
-            if "error" in result:
                 yield event.plain_result(f"❌ 获取状态失败: {result['error']}")
             else:
                 address = result.get("device_address", "未设置")
