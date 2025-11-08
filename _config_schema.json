@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "bridge_url": {
+      "type": "string",
+      "description": "桥接程序地址（运行在本地设备的 HTTP 服务地址）",
+      "default": "http://localhost:5000",
+      "examples": [
+        "http://localhost:5000",
+        "http://192.168.1.100:5000",
+        "http://raspberrypi.local:5000"
+      ]
+    }
+  }
+}
+
